@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.conteiner-grid{
+display: grid;
+grid-template-rows: 1fr 10fr 1fr;
+grid-template-areas: 
+'hearder hearder hearder'
+'hearder hearder hearder'
+'main main'
+'main main'
+'footer footer footer';
+}
+
+.hearder{
+    
+    grid-area: 'hearder' ;
+    background-color:#7663F2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.item{
+    display: grid;
+    justify-items:start;
+}
+
+.main{
+    grid-area: 'main';
+    background-color: #0D0D0D;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+}
+
+.footer{
+    grid-area: 'footer';
+    background-color:#7663F2;
+}
+
+.footer ul{
+    display:flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.footer-a{
+
+    font-size: 1.5em;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px;
+}
+
+.footer-a:hover{
+    text-decoration: underline;
+}
+
+.footer-li{
+    list-style: none;
+    
+    
+
+}
+
+.section{
+    
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    justify-items: center;
+     
+}
+.box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+.block{
+    background-color: #ffffffb2;
+   width: 50%;
+}
+h1{
+    justify-items: start;
+}
+
+.item-social{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+/* estilização da nevegação-Hearder */
+
+    .ul-nav{
+        display: flex;
+        padding-bottom: 10px;
+      
+    }
+        .li-nav{
+            list-style: none;
+            
+        }
+
+            .a-nav{
+                margin: 15px;
+                text-decoration: none;
+                color: white;
+                font-size: 1.4em;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .a-nav:hover{
+                text-decoration: underline;
+            }
+
+
+            .box-contato {
+                border:1px solid #7663F2;
+                border-radius: 1rem;
+            }
+
+            .content{
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                padding: 20px;
+            }
